@@ -34,7 +34,7 @@ function extraerTareas(data) {
     });
     return tareasPorAsignatura;
 }
-```javascript
+```
 
 
    3. Need help?
