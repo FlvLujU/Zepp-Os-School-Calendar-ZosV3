@@ -1,0 +1,105 @@
+{
+  "configVersion": "v2",
+  "app": {
+    "appId": 1070028,
+    "appName": "School Calendar",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "1.0.1"
+    },
+    "icon": "icon.png",
+    "vender": "FlvLujU Apps",
+    "description": "School Calendar"
+  },
+  "permissions": ["data:user.info", "device:os.local_storage", "device:os.alarm"],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.0",
+      "target": "3.0",
+      "minVersion": "3.0"
+    }
+  },
+  "targets": {
+    "gts4": {
+      "module": {
+        "page": {
+          "pages": [
+            "pages/init", "pages/cards", "pages/Me", "pages/calc", "pages/gradesView", "pages/grades", "pages/Events", "pages/color_set", "pages/lang", "pages/write", "pages/timer", "pages/wakeUp", "pages/pass", "pages/alarm", "pages/anim", "pages/profSelect","pages/ScheduleN" , "pages/timesN", "pages/restore", "pages/setUp", "pages/setUpV2", "pages/setUpN", "pages/setUpV2N", "pages/setUpV3", "pages/schedule", "pages/times", "pages/remind", "pages/conf", "pages/Tasks", "pages/newTaskW", "pages/newTask", "pages/calendar", "pages/index"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      },
+      "platforms": [
+        {
+          "name": "gts-4",
+          "deviceSource": 7995649
+        },
+        {
+          "name": "gts-4-w",
+          "deviceSource": 7995648
+        }
+      ],
+      "designWidth": 390
+    },
+    "active": {
+      "module": {
+        "page": {
+          "pages": [
+            "pages/init", "pages/cards", "pages/Me", "pages/gradesView", "pages/calc", "pages/grades", "pages/Events", "pages/color_set", "pages/lang", "pages/write", "pages/timer", "pages/wakeUp", "pages/pass", "pages/alarm", "pages/anim", "pages/profSelect","pages/ScheduleN" , "pages/timesN", "pages/restore", "pages/setUp", "pages/setUpV2", "pages/setUpN", "pages/setUpV2N", "pages/setUpV3", "pages/schedule", "pages/times", "pages/remind", "pages/conf", "pages/Tasks", "pages/newTaskW", "pages/newTask", "pages/calendar", "pages/index"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      },
+      "platforms": [
+        {
+          "name": "active",
+          "deviceSource": 8323329
+        },
+        {
+          "name": "active-w",
+          "deviceSource": 8323328
+        }
+      ],
+      "designWidth": 390
+    },
+    "cheetan": {
+      "module": {
+        "page": {
+          "pages": [
+            "pages/init", "pages/cards", "pages/Me", "pages/calc", "pages/gradesView", "pages/grades", "pages/Events", "pages/color_set", "pages/lang", "pages/write", "pages/timer", "pages/wakeUp", "pages/pass", "pages/alarm", "pages/anim", "pages/profSelect","pages/ScheduleN" , "pages/timesN", "pages/restore", "pages/setUp", "pages/setUpV2", "pages/setUpN", "pages/setUpV2N", "pages/setUpV3", "pages/schedule", "pages/times", "pages/remind", "pages/conf", "pages/Tasks", "pages/newTaskW", "pages/newTask", "pages/calendar", "pages/index"
+          ]
+        },
+        "app-side": {
+          "path": "app-side/index"
+        },
+        "setting": {
+          "path": "setting/index"
+        }
+      },
+      "platforms": [
+        {
+          "name": "cheetan",
+          "deviceSource": 8257793
+        }
+      ],
+      "designWidth": 390
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "School Calendar"
+    }
+  },
+  "defaultLanguage": "en-US"
+}

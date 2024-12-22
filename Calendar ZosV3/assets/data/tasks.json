@@ -1,0 +1,52 @@
+{
+  "asignaturas": [
+    {
+      "nombre": "Maths",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    },
+    {
+      "nombre": "Languaje",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    },
+    {
+      "nombre": "English",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    },
+    {
+      "nombre": "Physics",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    },
+    {
+      "nombre": "Technology",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    },
+    {
+      "nombre": "ICT",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    },
+    {
+      "nombre": "History",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    },
+    {
+      "nombre": "Philosophy",
+      "examenes": [],
+      "tareas": [],
+      "proyectos": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "school_calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FlvLujU Appsv",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@zeppos/device-types": "^1.0.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.18.1"
+  },
+  "dependencies": {
+    "@zeppos/zeus-cli": "^1.6.0",
+    "@zeppos/zml": "^0.0.29",
+    "@zeppos/zpm": "^3.1.0"
+  }
+}
