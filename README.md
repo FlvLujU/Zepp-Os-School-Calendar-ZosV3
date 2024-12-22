@@ -1,4 +1,52 @@
 # ZeppOS-School Calendar
+## Wanna use my app on your own App?
+
+#### Here you have how to do it:
+
+1. First, you will have to acces watch local storage and get the more important data you need.
+   import { LocalStorage } from '@zos/storage'
+   var conf = readFile("conf_keySch")
+   var jsonBase = readFile('task_keySch')
+   function readFile(filename) {
+      return localStorage.getItem(filename);
+   }
+  You can do that in that way.
+2. Let see now how to askk users task...
+   const tareas = extraerTareas(decodeJSON);
+   if(conf.new == false){//user have his app configured?
+   for (const asignatura in tareas) {
+    if (tareas[asignatura].length > 0) {
+        for (const [i, tarea] of tareas[asignatura].entries()) {
+
+            let txt = tarea.substring(0, tarea.indexOf("!")) //Tasks with non important info
+
+        }
+    }
+}
+   }
+    function extraerTareas(data) {
+      const tareasPorAsignatura = {};
+      data.asignaturas.forEach(asignatura => {
+        tareasPorAsignatura[asignatura.nombre] = asignatura.actividades.tareas;
+      });
+      return tareasPorAsignatura;
+    }
+
+   3. Need help?
+  
+      Ask me by email: flvluju@gmail.com or discord flvluju, I will ask the fast I can.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+## V3. ChangeLog:
+
+#### 1. App official languaje is English.
+
+#### 2. Ported for Zepp OS V3 devices.
+
+#### 3. Fixed some issues and errors
+
+--------------------------------------------------------------------------------------------------------------------------
 
 ## V2. ChangeLog:
 
