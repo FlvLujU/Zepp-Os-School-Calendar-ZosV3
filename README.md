@@ -25,107 +25,107 @@
 ```javascript
 const tareas = extraerTareas(decodeJSON);
 if (conf.new == false) { // user have his app configured?
-    for (const asignatura in tareas) {
-        if (tareas[asignatura].length > 0) {
-            for (const [i, tarea] of tareas[asignatura].entries()) {
-//tarea = "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12 !Creation date: 7/12/2024 9:10:45"
-                let txt = tarea.substring(0, tarea.indexOf("!")); // Tasks with non important info
-// txt = "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12"
-/*tarea: {
-  "Maths": [],
-  "Languaje": [],
-  "English": [],
-  "Physics": [],
-  "Technology": [],
-  "ICT": [],
-  "History": [],
-  "Philosophy": [],
-  "Biology": [
-    "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12 !Creation date: 7/12/2024 9:10:45"
-  ]
-}*/
-                /*Expected default result:
-          "asignaturas": [
-            {
-              "nombre": "Maths",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            },
-            {
-              "nombre": "Languaje",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            },
-            {
-              "nombre": "English",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            },
-            {
-              "nombre": "Physics",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            },
-            {
-              "nombre": "Technology",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            },
-            {
-              "nombre": "ICT",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            },
-            {
-              "nombre": "History",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            },
-            {
-              "nombre": "Philosophy",
-              "actividades": {
-                "examenes": [],
-                "tareas": [],
-                "proyectos": []
-              }
-            }
-          ],
-          "fechas": [],
-          "Events": [],
-          "Done": []
+  for (const asignatura in tareas) {
+    if (tareas[asignatura].length > 0) {
+      for (const [i, tarea] of tareas[asignatura].entries()) {
+        //tarea = "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12 !Creation date: 7/12/2024 9:10:45"
+        let txt = tarea.substring(0, tarea.indexOf("!")); // Tasks with non important info
+        // txt = "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12"
+        /*tarea: {
+          "Maths": [],
+          "Languaje": [],
+          "English": [],
+          "Physics": [],
+          "Technology": [],
+          "ICT": [],
+          "History": [],
+          "Philosophy": [],
+          "Biology": [
+            "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12 !Creation date: 7/12/2024 9:10:45"
+          ]
         }*/
-            }
-        }
+        /*Expected default result:
+  "asignaturas": [
+    {
+      "nombre": "Maths",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
+    },
+    {
+      "nombre": "Languaje",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
+    },
+    {
+      "nombre": "English",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
+    },
+    {
+      "nombre": "Physics",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
+    },
+    {
+      "nombre": "Technology",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
+    },
+    {
+      "nombre": "ICT",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
+    },
+    {
+      "nombre": "History",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
+    },
+    {
+      "nombre": "Philosophy",
+      "actividades": {
+        "examenes": [],
+        "tareas": [],
+        "proyectos": []
+      }
     }
+  ],
+  "fechas": [],
+  "Events": [],
+  "Done": []
+}*/
+      }
+    }
+  }
 }
 
 function extraerTareas(data) {
-    const tareasPorAsignatura = {};
-    data.asignaturas.forEach(asignatura => {
-        tareasPorAsignatura[asignatura.nombre] = asignatura.actividades.tareas;
-    });
-    return tareasPorAsignatura;
+  const tareasPorAsignatura = {};
+  data.asignaturas.forEach(asignatura => {
+    tareasPorAsignatura[asignatura.nombre] = asignatura.actividades.tareas;
+  });
+  return tareasPorAsignatura;
 }
 ```
 4. See the .json files in the project if you have any boubt
