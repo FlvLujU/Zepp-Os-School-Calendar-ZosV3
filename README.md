@@ -29,6 +29,77 @@ if (conf.new == false) { // user have his app configured?
         if (tareas[asignatura].length > 0) {
             for (const [i, tarea] of tareas[asignatura].entries()) {
                 let txt = tarea.substring(0, tarea.indexOf("!")); // Tasks with non important info
+                /*Expected default result:
+          "asignaturas": [
+            {
+              "nombre": "Maths",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            },
+            {
+              "nombre": "Languaje",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            },
+            {
+              "nombre": "English",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            },
+            {
+              "nombre": "Physics",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            },
+            {
+              "nombre": "Technology",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            },
+            {
+              "nombre": "ICT",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            },
+            {
+              "nombre": "History",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            },
+            {
+              "nombre": "Philosophy",
+              "actividades": {
+                "examenes": [],
+                "tareas": [],
+                "proyectos": []
+              }
+            }
+          ],
+          "fechas": [],
+          "Events": [],
+          "Done": []
+        }*/
             }
         }
     }
