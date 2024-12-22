@@ -4,14 +4,17 @@
 #### Here you have how to do it:
 
 1. First, you will have to acces watch local storage and get the more important data you need.
+2. 
    import { LocalStorage } from '@zos/storage'
    var conf = readFile("conf_keySch")
    var jsonBase = readFile('task_keySch')
    function readFile(filename) {
       return localStorage.getItem(filename);
    }
+   
   You can do that in that way.
-2. Let see now how to askk users task...
+4. Let see now how to askk users task...
+
    const tareas = extraerTareas(decodeJSON);
    if(conf.new == false){//user have his app configured?
    for (const asignatura in tareas) {
