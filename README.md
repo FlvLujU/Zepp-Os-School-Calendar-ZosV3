@@ -115,9 +115,7 @@ function extraerTareas(data) {
 ```
 3. See the .json files in the project if you have any boubt
 
-4. Need help?
-
-Ask me by email: flvluju@gmail.com or discord flvluju, I will ask the fast I can.
+4. Need help?: Ask me by email: flvluju@gmail.com or discord flvluju, I will ask the fast I can.
 
 --------------------------------------------------------------------------------------------------------------------------
 
