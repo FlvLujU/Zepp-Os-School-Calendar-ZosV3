@@ -5,7 +5,8 @@
 
 1. First, you will have to acces watch local storage and get the more important data you need.
 
-2. ```javascript
+2.   You can do that in this way.
+   ```javascript
    import { LocalStorage } from '@zos/storage'
    
    var conf = readFile("conf_keySch")
@@ -16,10 +17,8 @@
    
       return localStorage.getItem(filename);
    
-   }```
+   }
    
-   
-  You can do that in that way.
 4. Let see now how to askk users task...
 
 ```javascript
