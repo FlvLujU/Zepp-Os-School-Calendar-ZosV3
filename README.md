@@ -15,25 +15,26 @@
   You can do that in that way.
 4. Let see now how to askk users task...
 
-   const tareas = extraerTareas(decodeJSON);
-   if(conf.new == false){//user have his app configured?
-   for (const asignatura in tareas) {
-    if (tareas[asignatura].length > 0) {
-        for (const [i, tarea] of tareas[asignatura].entries()) {
-
-            let txt = tarea.substring(0, tarea.indexOf("!")) //Tasks with non important info
-
+```javascript
+const tareas = extraerTareas(decodeJSON);
+if (conf.new == false) { // user have his app configured?
+    for (const asignatura in tareas) {
+        if (tareas[asignatura].length > 0) {
+            for (const [i, tarea] of tareas[asignatura].entries()) {
+                let txt = tarea.substring(0, tarea.indexOf("!")); // Tasks with non important info
+            }
         }
     }
 }
-   }
-    function extraerTareas(data) {
-      const tareasPorAsignatura = {};
-      data.asignaturas.forEach(asignatura => {
+
+function extraerTareas(data) {
+    const tareasPorAsignatura = {};
+    data.asignaturas.forEach(asignatura => {
         tareasPorAsignatura[asignatura.nombre] = asignatura.actividades.tareas;
-      });
-      return tareasPorAsignatura;
-    }
+    });
+    return tareasPorAsignatura;
+}
+
 
    3. Need help?
   
