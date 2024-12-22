@@ -1,5 +1,5 @@
 # ZeppOS-School Calendar
-## Wanna use my app on your own App?
+## Wanna use my app on your own App or WatchFace?
 
 #### Here you have how to do it:
 
