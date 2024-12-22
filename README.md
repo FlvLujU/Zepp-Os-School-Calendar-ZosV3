@@ -28,7 +28,22 @@ if (conf.new == false) { // user have his app configured?
     for (const asignatura in tareas) {
         if (tareas[asignatura].length > 0) {
             for (const [i, tarea] of tareas[asignatura].entries()) {
+//tarea = "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12 !Creation date: 7/12/2024 9:10:45"
                 let txt = tarea.substring(0, tarea.indexOf("!")); // Tasks with non important info
+// txt = "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12"
+/*tarea: {
+  "Maths": [],
+  "Languaje": [],
+  "English": [],
+  "Physics": [],
+  "Technology": [],
+  "ICT": [],
+  "History": [],
+  "Philosophy": [],
+  "Biology": [
+    "Biology exercises.\nDeadline: 8/12/2024, Page: 123\n Exs: 12, 12 !Creation date: 7/12/2024 9:10:45"
+  ]
+}*/
                 /*Expected default result:
           "asignaturas": [
             {
