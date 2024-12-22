@@ -20,7 +20,7 @@
    }
 ```
    
-4. Let see now how to askk users task...
+3. Let see now how to askk users task...
 
 ```javascript
 const tareas = extraerTareas(decodeJSON);
@@ -113,9 +113,9 @@ function extraerTareas(data) {
     return tareasPorAsignatura;
 }
 ```
-3. See the .json files in the project if you have any boubt
+4. See the .json files in the project if you have any boubt
 
-4. Need help?: Ask me by email: flvluju@gmail.com or discord flvluju, I will ask the fast I can.
+5. Need help?: Ask me by email: flvluju@gmail.com or discord flvluju, I will ask the fast I can.
 
 --------------------------------------------------------------------------------------------------------------------------
 
