@@ -42,11 +42,11 @@ function extraerTareas(data) {
     return tareasPorAsignatura;
 }
 ```
+3. See the .json files in the project if you have any boubt
 
+4. Need help?
 
-   3. Need help?
-  
-      Ask me by email: flvluju@gmail.com or discord flvluju, I will ask the fast I can.
+Ask me by email: flvluju@gmail.com or discord flvluju, I will ask the fast I can.
 
 --------------------------------------------------------------------------------------------------------------------------
 
